@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>订单</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: #12af83;
+      }
+
+      .rt_main_manu {
+        margin-top: 10px;
+        height: 50px;
+      }
+
+      .rt_main_manu a {
+        color: #ffffff;
+        text-decoration: none;
+        margin-left: 10px;
+      }
+
+      .food_details {
+        background-color: #ffffff;
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+        max-width: 500px;
+      }
+
+      .food_details h1 {
+        margin-top: 20px;
+        text-align: center;
+      }
+      .image {
+        margin: 20px 20px;
+        padding: 10px #12af83;
+        margin-left: 10%;
+      }
+      .form_a {
+        margin-left: 10%;
+      }
+
+      form {
+        font-size: 18px;
+        font: "微软雅黑";
+      }
+
+      .form_member label {
+        margin-top: 10px;
+        line-height: 25px;
+      }
+
+      .form_member button {
+        width: 60px;
+        height: 25px;
+      }
+
+      .food_lable {
+        margin-top: 10px;
+      }
+
+      .food_price {
+        width: 70%;
+        margin-left: 10%;
+        margin-top: 10px;
+        background-color: #f4f4f4;
+      }
+
+      .food_price label {
+        margin: 5%;
+        display: block;
+
+        text-align: center;
+        width: 100%;
+      }
+      .food_price label th {
+        width: 18%;
+      }
+
+      .form_submit {
+        margin-top: 10px;
+        margin-bottom: 120px;
+        margin-left: 20%;
+      }
+
+      .form_submit button {
+        width: 60%;
+        height: 30px;
+        margin-bottom: 10px;
+        color: #ffffff;
+        font-size: 20px;
+        background-color: #4c6ca0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="rt_main_manu">
+      <a href="../door.html"><<返回主菜单</a>
+    </div>
+    <div class="food_details">
+      <h1>菜品详情</h1>
+      <img
+        class="image"
+        src="../../images/tgd.png"
+        alt="图片加载失败"
+        width="80%"
+      />
+      <form action="customor_datebase.js" class="form_a">
+        <div class="form_member">
+          <div class="food_name">
+            <label form="food_name"
+              >菜品名称:
+              <p id="food_name">铁锅炖</p>
+            </label>
+          </div>
+          <div class="food_lable">
+            菜品标签：
+            <button>东北菜系</button>
+            <button>咸口</button>
+            <button>肉类</button>
+            <button>炖</button>
+          </div>
+          <div class="food_price">
+            <label form="food_price_size">
+              <table>
+                <thead>
+                  <th>分量</th>
+                  <th>小份</th>
+                  <th>中份</th>
+                  <th>大份</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>价格</td>
+                    <td>59</td>
+                    <td>79</td>
+                    <td>99</td>
+                  </tr>
+                  <tr>
+                    <td>推荐</td>
+                    <td>1人份</td>
+                    <td>2-3人份</td>
+                    <td>3-4人份</td>
+                  </tr>
+                </tbody>
+              </table>
+            </label>
+          </div>
+          <div>
+            选择分量：
+            <input type="radio" name="food_size" />
+            <label for="food_size">小份</label>
+            <input type="radio" name="food_size" />
+            <label for="food_size">中份</label>
+            <input type="radio" name="food_size" />
+            <label for="food_size">大份</label>
+          </div>
+          <a href="/页面/door.html"></a>
+          <div class="form_submit">
+              <button type="submit">放入菜篮</button>
+              </a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
